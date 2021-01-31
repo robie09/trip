@@ -1,9 +1,10 @@
 import "./App.css";
 import TripList from "./components/TripList.js";
-import TripsDetail from "./components/TripsDetail";
+import TripDetail from "./components/TripDetail";
 import trips from "./trips.js";
 import React, { useState } from "react";
 import { Route, Switch } from "react-router";
+import Slider from "./components/Slider.js";
 
 function App() {
   const [trip, setTrip] = useState(null);
@@ -12,12 +13,11 @@ function App() {
     <div className="App">
       <header className="App-header"></header>
       <Switch>
-        <Route exact path="/">
-          <TripList trips={trips} setTrip={setTrip} />
+        {/* <Link to="/trip/:tripSlug"> Link Twist</Link> */}
+        <Route path="/">
+          <TripList trips={trips} />
         </Route>
-        <Route path="/TripDetail">
-          <TripsDetail />
-        </Route>
+        <TripDetail />
       </Switch>
     </div>
   );

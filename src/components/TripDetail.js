@@ -1,9 +1,8 @@
-import { DetailWrapper, ThemeButton } from "../styles";
-// import products from "../products";
+import { useParams } from "react-router";
 
 const TripDetail = (props) => {
-  const trip = props.trip;
-
+  const tripSlug = useParams().tripSlug;
+  const trip = props.trips.find((trip) => trip.slug === tripSlug);
   return (
     <>
       <h1>{trip.name}</h1>

@@ -2,6 +2,7 @@ const trips = [
   {
     id: 1,
     name: "Sea View",
+    slug: "sea-view",
     image:
       "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/8d/68/24/small-wooden-section.jpg",
     city: "Muharraq",
@@ -12,6 +13,7 @@ const trips = [
   {
     id: 2,
     name: "Aya Sofia",
+    slug: "aya-sofia",
     image:
       "https://img.traveltriangle.com/blog/wp-content/uploads/2018/10/turkey-trekking-cover.jpg",
     city: "Istanbul",
@@ -23,6 +25,7 @@ const trips = [
   {
     id: 3,
     name: "Mid-west",
+    slug: "mid-west",
     image:
       "https://www.brynwood.com/wp-content/uploads/sites/45/2019/04/Hiking-Rocky-Mountain-National-Park.jpg",
     city: "Rocky Mountains",

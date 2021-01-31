@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Trip from "./Trip";
 import SearchBar from "./SearchBar";
+import Slider from "./components/Slider.js";
 
 const TripList = (props) => {
   const [query, setQuery] = useState("");
@@ -11,6 +12,7 @@ const TripList = (props) => {
   return (
     <>
       {<SearchBar setQuery={setQuery} />}
+      {}
       {tripList}
     </>
   );
